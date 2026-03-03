@@ -1,0 +1,22 @@
+# Dependencies
+frontend/node_modules/
+frontend/.next/
+backend/__pycache__/
+backend/app/__pycache__/
+backend/venv/
+
+# Environment
+backend/.env
+frontend/.env.local
+
+# Data (large files)
+backend/data/embeddings.npz
+backend/data/tortora_chunks.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
