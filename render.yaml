@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: dr-silverio-api
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: free
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GROQ_MODEL
+        value: llama-3.3-70b-versatile
+      - key: ALLOWED_ORIGINS
+        value: https://dr-silverio.vercel.app,https://dr-silverio-geresilvs-projects.vercel.app
